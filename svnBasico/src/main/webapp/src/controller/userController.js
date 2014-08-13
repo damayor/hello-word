@@ -1,6 +1,5 @@
 /* 
  * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
@@ -24,9 +23,10 @@
             this.userModel = new App.Model.UserModel();
             this._renderEdit();
         },
-         save:function() { 
-            var model = $('#userForm').serializeObject();
-            document.getElementById("rta").innerHTML = "<h1> El usuario " + model.firstName + " " + model.lastName + " nació el " + model.birthDate +  "</h1>";
+        save:function() { 
+            var model = $('#userForm').serializeObject();  // ahi es donde hay q cambiar la vaina q se imprima
+            
+            document.getElementById("msj").innerHTML = "<div class=\"alert alert-danger\"> <a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times</a>Se ha registrado el usuario "+model.firstName +" "+ model.lastName +" con fecha de nacimiento: "+ model.fecha+"</div>";
         },
         cancel: function(){
             alert('Cancel');

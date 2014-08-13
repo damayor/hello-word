@@ -1,21 +1,14 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-
-
 <html>
     <head>
         <title>BasicBackbone</title>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width'>
         <link rel='stylesheet' href='http://bootswatch.com/journal/bootstrap.min.css'>
-        <link rel="stylesheet" href="css/datepicker.css">
-
+ 
         <script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
         <script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
         <script src='http://underscorejs.org/underscore-min.js'></script>
         <script src='http://backbonejs.org/backbone-min.js'></script>
-        <script src="js/bootstrap-datepicker.js"></script>
         <script>
             $.fn.serializeObject = function() {
         var o = {};
@@ -62,9 +55,8 @@
     </head>
     <body>
         <div class='container'>
-            <h1>Backbone BÃ¡sico</h1>
+            <h1>Backbone Básico</h1>
             <button class="btn btn-primary btn-lg" onclick="Backbone.trigger('user-create');return false;">Create User </button>
- 
             <div id='main'></div>
         </div>
         <div id="rta"></div>
